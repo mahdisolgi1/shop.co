@@ -20,7 +20,7 @@ const config: Config = {
       },
       fontFamily: {
         Satoshi: ["Satoshi", "sans-serif"],
-        CF: ["Integral CF", "sans-serif"],
+        Bebas: ["Bebas Neue", "sans-serif"],
       },
       spacing: {
         "72": "18rem",
