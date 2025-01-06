@@ -46,6 +46,7 @@ const Navbar: FC = () => {
 
           <MdClose
             color="white"
+            aria-label="close icon"
             onClick={() => setToggleTopbar(false)}
             className="hidden size-6 cursor-pointer md:absolute right-14 top- md:block "
           />
@@ -54,6 +55,7 @@ const Navbar: FC = () => {
       <div className="md:px-12 md:py-5 p-4 flex gap-10 justify-between items-center">
         <div className="flex gap-3  justify-between items-center">
           <IoIosMenu
+            aria-label="menu icon"
             onClick={OpenMenu}
             className="cursor-pointer size-8 md:hidden"
           />
@@ -85,6 +87,7 @@ const Navbar: FC = () => {
           />
           {!value && (
             <IoIosSearch
+              aria-label="search icon"
               color="grey"
               className="cursor-pointer absolute left-4 top-2"
             />
@@ -92,14 +95,21 @@ const Navbar: FC = () => {
         </div>
         <div className="flex gap-3 justify-between items-center">
           <IoIosSearch
+            aria-label="search icon"
             onClick={() => setModal(true)}
             className="cursor-pointer size-6 md:hidden"
           />
           <Link href="#">
-            <BiCart className="cursor-pointer size-6 md:" />
+            <BiCart
+              aria-label="cart icon"
+              className="cursor-pointer size-6 md:"
+            />
           </Link>
           <Link href="#">
-            <RxAvatar className="cursor-pointer size-6 md:" />
+            <RxAvatar
+              aria-label="avatar icon"
+              className="cursor-pointer size-6 md:"
+            />
           </Link>
         </div>
       </div>
@@ -107,6 +117,7 @@ const Navbar: FC = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-50">
           <div className="bg-primary w-[90%] p-10 md:w-[400px] rounded-lg shadow-lg relative">
             <IoIosClose
+              aria-label="close icon"
               onClick={() => setModal(false)}
               className="absolute top-2 right-2 cursor-pointer text-xl"
             />
